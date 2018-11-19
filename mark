@@ -4,3 +4,15 @@
 近半数移动用户因为在10秒内仍未打开页面从而放弃。
 选择在 serviceWorker 里对资源做预载和页面预渲染
 减小首屏渲染时间，还有一个途径就是，提取首屏的CSS样式，分离出来直接放进html，这样可以避免花太多时间渲染界面。
+const data = {};
+const input = document.getElementById('input');
+Object.defineProperty(data, 'text', {
+  set(value) {
+    input.value = value;
+    this.value = value;
+  }
+});
+input.onChange = function(e) {
+  data.text = e.target.value;
+}
+
