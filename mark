@@ -15,4 +15,4 @@ Object.defineProperty(data, 'text', {
 input.onChange = function(e) {
   data.text = e.target.value;
 }
-
+7eba17a4ca3b1a8346
