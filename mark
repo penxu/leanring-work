@@ -16,3 +16,4 @@ input.onChange = function(e) {
   data.text = e.target.value;
 }
 7eba17a4ca3b1a8346
+https://www.dnsperf.com/  既可以查看不同服务商的DNS lookup time，还可以查看具体的波动，更加可以通过域名查看它在各个地区的DNS lookup time
