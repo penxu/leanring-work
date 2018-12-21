@@ -27,3 +27,4 @@ child{
   display：inline-block；
   vertical-align:middle;
 }
+如果想让浏览器能访问到其他的 响应头的话 需要在服务器上设置 Access-Control-Expose-Header
