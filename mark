@@ -106,3 +106,15 @@ child{
       event.target.value = ''
       this.ajaxUpload(formdata)
     },
+windows 下的 vue 项目可以找到以下路径
+
+./node_modules/.bin/webpack-dev-server.cmd
+添加 --max-old-space-size=4096
+
+@IF EXIST "%~dp0\node.exe" (
+  "%~dp0\node.exe"  "%~dp0\..\webpack-dev-server\bin\webpack-dev-server.js" %*
+) ELSE (
+  @SETLOCAL
+  @SET PATHEXT=%PATHEXT:;.JS;=;%
+  node  --max-old-space-size=4096 "%~dp0\..\webpack-dev-server\bin\webpack-dev-server.js" %*
+)
